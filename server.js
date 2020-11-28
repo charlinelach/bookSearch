@@ -1,19 +1,17 @@
 const express = require("express");
-const logger = require("morgan");
+
 const mongoose = require("mongoose");
-const compression = require("compression");
-
-const PORT = process.env.PORT || 3000;
-
+const routes = require("./routes");
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.use(logger("dev"));
-
-app.use(compression());
+// Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-app.use(express.static("public"));
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/books", {
   useNewUrlParser: true,
@@ -22,8 +20,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/books", {
   useFindAndModify: false
 });
 
-app.use(require("./routes/api.js"));
+app.use(routes);
 
-app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
-});
+// Start the API server
+app.listen(PORT, function() {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  });
