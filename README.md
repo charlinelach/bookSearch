@@ -1,4 +1,54 @@
-# Getting Started with Create React App
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
+# Search for Books, Guides, and More
+The purpose of this application is to provide users a way to search for books with a Google API.
+
+**Created On**: `2020 December 02`
+<br>
+Deployment: https://radiant-hamlet-72709.herokuapp.com/
+<br>
+Repository: https://github.com/charlinelach/bookSearch
+
+## Table of Contents
+* [Usage](#usage)
+* [Installation](#installation)
+* [Credits & Thank You](#credits)
+* [Testing & Errors](#testing)
+* [License](#license)
+
+# Development
+
+## Usage Instructions
+To utilize the application, the user would access the application via [Heroku](https://radiant-hamlet-72709.herokuapp.com/) link.
+
+<!-- ![GIF](./src/gif.gif) -->
+
+## Installation
+To create this application, the following were installed locally:
+```
+React app: npx create-react-app book
+React Router Dom: npm i react-router-dom
+Bootstrap: npm i bootstrap
+```
+
+## Credits
+Shout out to the wonderful instructor, TAs, and classmates!
+
+## Testing
+Test on a local device by cloning the GitHub/reposity and typing **node server.js**.
+<br>
+Test remotely by using the [Heroku](https://radiant-hamlet-72709.herokuapp.com/) depository.
+
+# License
+MIT License Copyright © 2020
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +117,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
