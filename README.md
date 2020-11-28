@@ -28,6 +28,9 @@ To create this application, the following were installed locally:
 ```
 React app: npx create-react-app book
 React Router Dom: npm i react-router-dom
+Axios: npm i axios
+Express: npm i express
+Mongoose: npm i mongodb
 Bootstrap: npm i bootstrap
 ```
 
