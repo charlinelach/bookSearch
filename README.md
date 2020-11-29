@@ -1,4 +1,48 @@
-# Create React Express App
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
+# Search for Books, Guides, and More
+The purpose of this application is to provide users a way to search for books with a Google API.
+
+**Created On**: `2020 December 02`
+<br>
+Deployment: https://radiant-hamlet-72709.herokuapp.com/
+<br>
+Repository: https://github.com/charlinelach/bookSearch
+
+## Table of Contents
+* [Usage](#usage)
+* [Installation](#installation)
+* [Credits & Thank You](#credits)
+* [Testing & Errors](#testing)
+* [License](#license)
+
+# Development
+
+## Usage Instructions
+To utilize the application, the user would access the application via [Heroku](https://radiant-hamlet-72709.herokuapp.com/) link.
+
+<!-- ![GIF](./src/gif.gif) -->
+
+## Installation
+```
+npm install: npm i
+Mongoose: npm i mongodb
+Bootstrap: npm i bootstrap
+```
+
+## Credits
+Shout out to the wonderful instructor, TAs, and classmates! And a thank you to the creator of the Boilerplate for Create React Express App.
+
+## Testing
+Test remotely by using the [Heroku](https://radiant-hamlet-72709.herokuapp.com/) depository.
+
+# License
+MIT License Copyright © 2020
+
+
+
+
+<!-- # Create React Express App
 
 ## About This Boilerplate
 
@@ -26,4 +70,4 @@ Your app should now be running on <http://localhost:3000>. The Express server sh
 
 ## Deployment (Heroku)
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest. -->
