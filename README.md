@@ -27,6 +27,7 @@ To utilize the application, the user would access the application via [Heroku](h
 ```
 npm install: npm i
 Mongoose: npm i mongodb
+Axios: npm i axios
 Bootstrap: npm i bootstrap
 React Router Dom: npm i react-router-dom
 ```
