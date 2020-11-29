@@ -35,6 +35,8 @@ Shout out to the wonderful instructor, TAs, and classmates! And a thank you to t
 
 ## Testing
 Test remotely by using the [Heroku](https://radiant-hamlet-72709.herokuapp.com/) depository.
+<br>
+If testing locally, ensure npm is installed (with *npm i*).
 
 # License
 MIT License Copyright © 2020
