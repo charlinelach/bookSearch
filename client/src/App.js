@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Wrapper from "./components/Wrapper";
 
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
 
 class App extends Component {
   render() {
@@ -27,15 +30,3 @@ class App extends Component {
 }
 
 export default App;
-
-// import logo from "./logo.svg";
-
-{/* <div className="App">
-<div className="App-header">
-  <img src={logo} className="App-logo" alt="logo" />
-  <h2>Welcome to React</h2>
-</div>
-<p className="App-intro">
-  To get started, edit <code>src/App.js</code> and save to reload.
-</p>
-</div> */}
