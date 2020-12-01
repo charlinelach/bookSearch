@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-# Search for Books, Guides, and More
+# Google Book Spy
 The purpose of this application is to provide users a way to search for books with a Google API.
 
 **Created On**: `2020 December 02`

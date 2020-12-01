@@ -1,5 +1,3 @@
-// From Unit 21 Activity 05
-
 const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api");
