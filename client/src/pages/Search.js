@@ -50,7 +50,6 @@ class Search extends React.Component {
             .catch(err => console.log(err));
     };
 
-    // saves book to database
     handleSaveBook = bookData => {
         API.saveBook(bookData)
             .then(res => alert("Book Saved!"))

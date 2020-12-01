@@ -7,7 +7,6 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
 
-
 const App = () => {
     return (
       <Router>
