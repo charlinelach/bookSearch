@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+
 import Search from "./pages/Search";
-import Saved from "./pages/Saved";
+import BooksSaved from "./pages/BooksSaved";
 import NoMatch from "./pages/NoMatch";
 
 const App = () => {
@@ -15,7 +17,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Search} />
             <Route exact path="/search" component={Search} />
-            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/saved" component={BooksSaved} />
             <Route exact path="/noMatch" component={NoMatch} />
           </Switch>
           <Footer />

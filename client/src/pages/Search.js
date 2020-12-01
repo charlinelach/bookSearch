@@ -16,8 +16,8 @@ class Search extends React.Component {
         books: []
     };
 
-    searchBooks = query => {
-        API.searchBooks(query)
+    search = query => {
+        API.search(query)
             .then(res =>
                 this.setState(
                     {
@@ -33,7 +33,7 @@ class Search extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        this.searchBooks(this.state.search);
+        this.search(this.state.search);
     };
 
     handleInputChange = event => {

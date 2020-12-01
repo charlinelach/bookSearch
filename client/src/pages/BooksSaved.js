@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 
-import Card from "../components/Card";
-import Col from "../components/Col";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Saved from "../components/Saved";
+import Card from "../components/Card/Card";
+import Col from "../components/Col/Col";
+import Container from "../components/Container/Container";
+import Row from "../components/Row/Row";
+import Saved from "../components/Saved/Saved";
 
-class Saved extends Component {
+class BooksSaved extends Component {
     state = {
         savedBooks: [],
     }
@@ -64,4 +64,4 @@ class Saved extends Component {
     }
 }
 
-export default Saved;
+export default BooksSaved;
