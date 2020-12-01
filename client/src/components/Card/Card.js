@@ -3,10 +3,11 @@ import "./style.css";
 
 function Card(props) {
     return (
-        <div class="card align-left">
-            <div class="card-body">
-                {props.children}
+        <div className="card text-center">
+            <div className="card-header">
+                <h3>{props.heading}</h3>
             </div>
+            <div className="card-body text-left">{props.children}</div>
         </div>
     );
 }
