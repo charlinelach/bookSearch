@@ -1,6 +1,6 @@
 import React from "react";
 
-const DeleteBtn = props => {
+function DeleteBtn(props) {
     return (
         <span className="delete-btn" {...props} role="button" tabIndex="0">
             ✗

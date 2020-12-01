@@ -6,7 +6,7 @@ function Navbar() {
     return (
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to="/">Book List</Link>
+            <Link className="navbar-brand" to="/">Google's Book Spy</Link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

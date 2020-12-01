@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
     return (
         <footer className="footer">
-            <span>Google Book Search</span>
+            <span>Google's Book Spy</span>
         </footer>
     );
 }
