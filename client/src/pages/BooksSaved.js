@@ -1,3 +1,6 @@
+// FROM CHARLINE
+// I continued running into irregular issues with this page's creation - the saved books would not remain. If I changed line 15, 43, and 46 to books, I would run into an error about strings that I didn't have time/will to understand.
+
 import React, { Component } from "react";
 import API from "../utils/API";
 
