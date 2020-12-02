@@ -36,7 +36,7 @@ class BooksSaved extends Component {
         return (
 <Container>
         <Row>
-          <Col size="md-12">
+          <Col>
             {this.state.books.length ? (
               <Card heading="Saved Books">
                 {this.state.books.map(book => (
@@ -44,9 +44,9 @@ class BooksSaved extends Component {
                     key={book._id}
                     src={book 
                       ? book.src 
-                      : "http://icons.iconarchive.com/icons/paomedia/small-n-flat/128/book-icon.png"}
+                      : "N/A"}
                     title={book.title}
-                    authors={book.authors.join(", ")}
+                    author={book.author.join(", ")}
                     date={book.date}
                     description={book.description}
                     link={book.link}

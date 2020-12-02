@@ -15,6 +15,7 @@ function Form(props) {
                         placeholder="Search for a Book"
                         id="search"
                     />
+                    <br />
                     <button onClick={props.handleFormSubmit} type="button" className="btn btn-light">
                         Search
                     </button>

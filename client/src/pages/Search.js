@@ -85,10 +85,10 @@ class Search extends React.Component {
                                         key={book.id}
                                         src={book.volumeInfo.imageLinks
                                             ? book.volumeInfo.imageLinks.thumbnail
-                                            : "http://icons.iconarchive.com/icons/paomedia/small-n-flat/128/book-icon.png"}
+                                            : "N/A"}
                                         title={book.volumeInfo.title}
-                                        authors={book.volumeInfo.authors
-                                            ? book.volumeInfo.authors.join(", ")
+                                        author={book.volumeInfo.author
+                                            ? book.volumeInfo.author.join(", ")
                                             : "N/A"}
                                         date={book.volumeInfo.publishedDate}
                                         description={book.volumeInfo.description}
@@ -98,7 +98,7 @@ class Search extends React.Component {
                                             src: book.volumeInfo.imageLinks
                                                 ? book.volumeInfo.imageLinks.thumbnail
                                                 : "http://icons.iconarchive.com/icons/paomedia/small-n-flat/128/book-icon.png",
-                                            authors: book.volumeInfo.authors,
+                                            author: book.volumeInfo.author,
                                             date: book.volumeInfo.publishedDate,
                                             description: book.volumeInfo.description,
                                             link: book.volumeInfo.infoLink
