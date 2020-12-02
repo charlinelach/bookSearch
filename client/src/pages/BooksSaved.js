@@ -8,60 +8,63 @@ import Row from "../components/Row/Row";
 import Saved from "../components/Saved/Saved";
 
 class BooksSaved extends Component {
-    state = {
-        savedBooks: [],
-    }
+  state = {
+    book: [],
+  }
 
-    componentDidMount() {
-        API.getBooks()
-            .then(res => this.setState({ books: res.data }))
-            .catch(err => console.error(err));
-    }
+  componentDidMount() {
+    API.getBooks()
+      .then(res => this.setState({ books: res.data }))
+      .catch(err => console.error(err));
+  }
 
-    loadBooks = () => {
-        API.getBooks()
-          .then(res =>
-            this.setState({ books: res.data })
-          )
-          .catch(err => console.log(err));
-      };
-    
-      handleDeleteBook = id => {
-        API.deleteBook(id)
-          .then(res => this.loadBooks())
-          .catch(err => console.log(err));
-      }
+  loadBooks = () => {
+    API.getBooks()
+      .then(res =>
+        this.setState({ books: res.data })
+      )
+      .catch(err => console.log(err));
+  };
 
-    render() {
-        return (
-<Container>
+  handleDeleteBook = id => {
+    API.deleteBook(id)
+      .then(res => this.loadBooks())
+      .catch(err => console.log(err));
+  }
+
+  render() {
+    return (
+      <Container>
         <Row>
           <Col>
-            {this.state.books.length ? (
-              <Card heading="Saved Books">
-                {this.state.books.map(book => (
-                  <Saved
-                    key={book._id}
-                    src={book 
-                      ? book.src 
-                      : "N/A"}
-                    title={book.title}
-                    author={book.author.join(", ")}
-                    date={book.date}
-                    description={book.description}
-                    link={book.link}
-                    handleDeleteBook={() => this.handleDeleteBook(book._id)}
-                  />
-                ))}
-              </Card>
-            ) : (
-              <Card heading="Saved Books"></Card>
-            )}
+            {this.state.book.length ?
+              (
+                <Card heading="Saved Books">
+                  {this.state.book.map(book => (
+                    <Saved
+                      key={book._id}
+                      src={book
+                        ? book.src
+                        : "N/A"}
+                      title={book.title}
+                      author={book.author.join(", ")}
+                      date={book.date}
+                      description={book.description}
+                      link={book.link}
+                      handleDeleteBook={() => this.handleDeleteBook(book._id)}
+                    />
+                  ))}
+                </Card>
+              ) :
+              (
+                <Card heading="Saved Books"></Card>
+              )
+            }
           </Col>
         </Row>
       </Container>
-        )
-    }
+    )
+  }
 }
 
 export default BooksSaved;
